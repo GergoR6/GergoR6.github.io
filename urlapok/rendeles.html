@@ -87,28 +87,136 @@
             <input type="tel" class="form-control" id="validationDefault08" required>
           </div>
         </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
-              Fogadja el a feltételeket!
-            </label>
+
+        <div class="form-row">
+          <div class="form-group col-md-6 mb-3">
+            <label for="exampleFormControlTextarea1">Megjegyzés</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Elfogadás</button>
+
 
       </fieldset>
     </form>
   </div>
-  
+
 
   <div class="container">
+
     <form>
       <fieldset>
-        <legend>Rendelés adatai</legend>
+        <legend>Termék adatai</legend>
+
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            
+            <div>
+              <span>Hamburger</span>
+              <select class="custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <span>Extra feltét</span>
+            <div>
+              <input checked id="nothing" name="extra" type="radio" value="0">
+              <label for="nothing">Nem kérek</label>
+            </div>
+            <div>
+              <input id="cheese" name="extra" type="radio" value="300">
+              <label for="cheese">feltét 1</label>
+            </div>
+            <div>
+              <input id="double-cheese" name="extra" type="radio" value="600">
+              <label for="double-cheese">feltét 2</label>
+            </div>
+            <div>
+              <input id="double-meat" name="extra" type="radio" value="1000">
+              <label for="double-meat">feltét 3</label>
+            </div>
+            <div>
+              <input id="double-double" name="extra" type="radio" value="1600">
+              <label for="double-double">feltét 4</label>
+            </div>
+            <div>
+              <input id="valami-mas" name="extra" type="radio" value="1800">
+              <label for="valami-mas">feltét 5</label>
+            </div>
+            <div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Szósz</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 mb-3">
+            <div>
+              <span>Pizza</span>
+              <select class="custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Alap</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div>
+          <label for="quantity">Mennyiség</label>
+          <input id="quantity" name="quantity" type="number" min="1" max="10">
+        </div>
       </fieldset>
+
+
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Fogadja el a feltételeket!
+          </label>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Rendelés leadása</button> Ár: <span>1200</span>Ft
+
+
+
     </form>
+
   </div>
+
 
 
 
