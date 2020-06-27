@@ -115,15 +115,19 @@
               <span>
                 <h6><i class="fas fa-hamburger"></i>Hamburger</h6>
               </span>
-              <select class="custom-select">
+              <select  id="hamburgerValasztas" class="custom-select" onchange="singleSelectChangeValue()">
                 <option selected>Válassz Hamburgert</option>
-                <option name="hamburger" value="0">Nem kérek</option>
-                <option name="hamburger" id="hamburger" value="1000">Hamburger</option>
-                <option name="hamburger" value="1200">Sajtburger</option>
-                <option name="hamburger" value="1400">Dupla sajtburger</option>
-                <option name="hamburger" value="1800">XXL</option>
-                <option name="hamburger" value="1800">Texas</option>
+                <option  value="0">Nem kérek</option>
+                <option  value="1000">Hamburger</option>
+                <option  value="1200">Sajtburger</option>
+                <option  value="1400">Dupla sajtburger</option>
+                <option  value="1800">XXL</option>
+                <option  value="1800">Texas</option>
               </select>
+
+              <div class="col-md-4 form-group">
+                <input type="text" id="hamburgerValasztasJS" class="form-control" placeholder="get value on option select">
+              </div>
             </div>
             <span>
               <h6>Extra feltét</h6>
