@@ -118,7 +118,7 @@
               <select class="custom-select">
                 <option selected>Válassz Hamburgert</option>
                 <option name="hamburger" value="0">Nem kérek</option>
-                <option name="hamburger" value="1000">Hamburger</option>
+                <option name="hamburger" id="hamburger" value="1000">Hamburger</option>
                 <option name="hamburger" value="1200">Sajtburger</option>
                 <option name="hamburger" value="1400">Dupla sajtburger</option>
                 <option name="hamburger" value="1800">XXL</option>
@@ -230,10 +230,10 @@
 
 
         <div>
-          <label for="quantity">
+          <label for="amount-input">
             <h5>Mennyiség</h5>
           </label>
-          <input id="quantity" name="quantity" type="number" min="1" max="10">
+          <input id="amount-input" name="amount-input" type="number" min="1" max="10">
         </div>
       </fieldset>
 
@@ -257,7 +257,7 @@
 
 
 
-
+  <script src="../js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
