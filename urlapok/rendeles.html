@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
   <title>Grg Burger</title>
 </head>
 
@@ -108,79 +109,114 @@
         <legend>Termék adatai</legend>
 
         <div class="form-row">
-          <div class="col-md-6 mb-3">
-            
+          <div class="col-md-4 mb-3">
+
             <div>
-              <span>Hamburger</span>
+              <span>
+                <h6><i class="fas fa-hamburger"></i>Hamburger</h6>
+              </span>
               <select class="custom-select">
                 <option selected>Válassz Hamburgert</option>
-                <option name="hamburger" value="1">Hamburger</option>
-                <option name="hamburger" value="2">Sajtburger</option>
-                <option name="hamburger" value="3">Dupla sajtburger</option>
-                <option name="hamburger" value="3">XXL</option>
-                <option name="hamburger" value="3">Texas</option>
+                <option name="hamburger" value="0">Nem kérek</option>
+                <option name="hamburger" value="1000">Hamburger</option>
+                <option name="hamburger" value="1200">Sajtburger</option>
+                <option name="hamburger" value="1400">Dupla sajtburger</option>
+                <option name="hamburger" value="1800">XXL</option>
+                <option name="hamburger" value="1800">Texas</option>
               </select>
             </div>
-            <span>Extra feltét</span>
+            <span>
+              <h6>Extra feltét</h6>
+            </span>
             <div>
               <input checked id="nothing" name="extra" type="radio" value="0">
               <label for="nothing">Nem kérek</label>
             </div>
             <div>
               <input id="cheese" name="extra" type="radio" value="300">
-              <label for="cheese">Sajt</label>
+              <label for="cheese">Sajt (300Ft)</label>
             </div>
             <div>
               <input id="double-cheese" name="extra" type="radio" value="600">
-              <label for="double-cheese">Dupla sajt</label>
+              <label for="double-cheese">Dupla sajt (600Ft)</label>
             </div>
             <div>
               <input id="double-meat" name="extra" type="radio" value="1000">
-              <label for="double-meat">Dupla hús</label>
+              <label for="double-meat">Dupla hús (1000Ft)</label>
             </div>
             <div>
               <input id="double-double" name="extra" type="radio" value="1600">
-              <label for="double-double">Dupla dupla</label>
+              <label for="double-double">Dupla dupla (1600Ft)</label>
             </div>
-            
+
             <div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Szósz</label>
+                <label for="exampleFormControlSelect1">
+                  <h6>Szósz</h6>
+                </label>
                 <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Tejfölös</option>
-                  <option>Csípős</option>
-                  <option>Magyaros</option>
-                  <option>BBQ</option>
-                  <option>Mustár</option>
+                  <option name="szosz" value="0">Nem kérek</option>
+                  <option name="szosz" value="500">Tejfölös (500Ft)</option>
+                  <option name="szosz" value="500">Csípős (500Ft) </option>
+                  <option name="szosz" value="600">Magyaros(600Ft)</option>
+                  <option name="szosz" value="800">BBQ (800Ft)</option>
+                  <option name="szosz" value="500">Mustár (500Ft)</option>
                 </select>
               </div>
             </div>
           </div>
 
 
-          <div class="col-md-6 mb-3">
+          <div class="col-md-4 mb-3">
             <div>
-              <span>Pizza</span>
+              <span>
+                <h6><i class="fas fa-pizza-slice"></i>Pizza</h6>
+              </span>
               <select class="custom-select">
                 <option selected>Válassz Pizzát</option>
-                <option value="1">Margaritha</option>
-                <option value="2">Sonkás</option>
-                <option value="3">Kukoricás</option>
-                <option value="3">Gombás</option>
-                <option value="3">Hawaii</option>
-                <option value="3">Szalámis</option>
+                <option name="pizza" value="0">Nem kérek</option>
+                <option name="pizza" value="1050">Margaritha</option>
+                <option name="pizza" value="1200">Sonkás</option>
+                <option name="pizza" value="1400">Kukoricás</option>
+                <option name="pizza" value="1300">Gombás</option>
+                <option name="pizza" value="1500">Hawaii</option>
+                <option name="pizza" value="1300">Szalámis</option>
               </select>
             </div>
 
             <div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">Alap</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Paradicsomos</option>
-                  <option>Tejfölös</option>                  
-                </select>
+              <span>
+                <h6>Alap</h6>
+              </span>
+              <div>
+                <input id="double-meat" name="alap" type="radio" value="100">
+                <label for="double-meat">Tejfölös (100Ft) </label>
+              </div>
+              <div>
+                <input id="double-meat" name="alap" type="radio" value="0">
+                <label for="double-meat">Paradicsomos (0Ft)</label>
               </div>
             </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div>
+              <span>
+                <h6><i class="fab fa-gulp"></i>Üdítő</h6>
+              </span>
+              <select class="custom-select">
+                <option selected>Válassz üdítőt</option>
+                <option name="drink" value="0">Nem kérek</option>
+                <option name="drink" value="500">Coca-Cola</option>
+                <option name="drink" value="500">Pepsi</option>
+                <option name="drink" value="500">Fanta</option>
+                <option name="drink" value="500">Sprite</option>
+                <option name="drink" value="600">Coca-Cola Zero</option>
+                
+              </select>
+            </div>
+
+
           </div>
 
 
@@ -194,7 +230,9 @@
 
 
         <div>
-          <label for="quantity">Mennyiség</label>
+          <label for="quantity">
+            <h5>Mennyiség</h5>
+          </label>
           <input id="quantity" name="quantity" type="number" min="1" max="10">
         </div>
       </fieldset>
@@ -208,7 +246,7 @@
           </label>
         </div>
       </div>
-      <button class="btn btn-primary" type="submit">Rendelés leadása</button> Ár: <span>1200</span>Ft
+      <button class="btn btn-primary" type="submit">Rendelés leadása <i class="fas fa-search-dollar"></i></button> Ár: <span>1200</span>Ft
 
 
 
