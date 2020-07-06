@@ -115,18 +115,19 @@
               <span>
                 <h6><i class="fas fa-hamburger"></i>Hamburger</h6>
               </span>
-              <select  id="hamburgerValasztas" class="custom-select" onchange="singleSelectChangeValue()">
+              <select id="hamburgerValasztas" class="custom-select" onchange="singleSelectChangeValue()">
                 <option selected>Válassz Hamburgert</option>
-                <option  value="0">Nem kérek</option>
-                <option  value="1000">Hamburger</option>
-                <option  value="1200">Sajtburger</option>
-                <option  value="1400">Dupla sajtburger</option>
-                <option  value="1800">XXL</option>
-                <option  value="1800">Texas</option>
+                <option value="0">Nem kérek</option>
+                <option value="1000">Hamburger</option>
+                <option value="1200">Sajtburger</option>
+                <option value="1400">Dupla sajtburger</option>
+                <option value="1800">XXL</option>
+                <option value="1800">Texas</option>
               </select>
 
-              <div class="col-md-4 form-group">
-                <input type="text" id="hamburgerValasztasJS" class="form-control" placeholder="get value on option select">
+              <div>
+                <input type="text" id="hamburgerValasztasJS" class="form-control"
+                  placeholder="Hamburger ára">
               </div>
             </div>
             <span>
@@ -176,7 +177,7 @@
               <span>
                 <h6><i class="fas fa-pizza-slice"></i>Pizza</h6>
               </span>
-              <select class="custom-select">
+              <select id="pizzaValasztas" class="custom-select" onchange="singleSelectChangeValue2()">
                 <option selected>Válassz Pizzát</option>
                 <option name="pizza" value="0">Nem kérek</option>
                 <option name="pizza" value="1050">Margaritha</option>
@@ -186,6 +187,12 @@
                 <option name="pizza" value="1500">Hawaii</option>
                 <option name="pizza" value="1300">Szalámis</option>
               </select>
+              <div>
+                <input type="text" id="pizzaValasztasJS" class="form-control"
+                  placeholder="Pizza ára">
+              </div>
+
+
             </div>
 
             <div>
@@ -208,7 +215,7 @@
               <span>
                 <h6><i class="fab fa-gulp"></i>Üdítő</h6>
               </span>
-              <select class="custom-select">
+              <select id="uditoValasztas" class="custom-select" onchange="singleSelectChangeValue3()">
                 <option selected>Válassz üdítőt</option>
                 <option name="drink" value="0">Nem kérek</option>
                 <option name="drink" value="500">Coca-Cola</option>
@@ -216,8 +223,11 @@
                 <option name="drink" value="500">Fanta</option>
                 <option name="drink" value="500">Sprite</option>
                 <option name="drink" value="600">Coca-Cola Zero</option>
-                
               </select>
+              <div>
+                <input type="text" id="uditoValasztasJS" class="form-control"
+                  placeholder="Üdítő ára">
+              </div>
             </div>
 
 
@@ -250,7 +260,8 @@
           </label>
         </div>
       </div>
-      <button class="btn btn-primary" type="submit">Rendelés leadása <i class="fas fa-search-dollar"></i></button> Ár: <span>1200</span>Ft
+      <button class="btn btn-primary" type="submit">Rendelés leadása <i class="fas fa-search-dollar"></i></button> Ár:
+      <span>1200</span>Ft
 
 
 
