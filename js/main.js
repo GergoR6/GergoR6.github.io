@@ -1,6 +1,9 @@
 function calcAmount() {
 
     let amountInput = document.querySelector("input[name='amount-input']");
+    let hamburger = document.querySelector("input[name='hamburgerValasztas']").value;
+    let pizza = document.querySelector("input[name='pizzaValasztas']").value;
+    let udito = document.querySelector("input[name='uditoValasztas']").value;
 
 }
 
